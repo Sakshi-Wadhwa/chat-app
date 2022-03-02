@@ -3,7 +3,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth,db } from "../firebase";
 import { setDoc, doc, Timestamp } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
-const Register = () => {
+const Login = () => {
     const [data, setData] = useState({
       name: "",
       email: "",
@@ -80,4 +80,4 @@ const handleSubmit = async (e) => {
   )
 };
 
-export default Register;
+export default Login;
